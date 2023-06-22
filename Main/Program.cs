@@ -6,10 +6,10 @@ namespace Main
     {
         public static void Main()
         {
-            SettingsDialog gameSettings = new SettingsDialog();
-            gameSettings.ShowDialog();
-            //UserInterface gameInterface = new UserInterface();
-            //gameInterface.Start();
+            //SettingsDialog gameSettings = new SettingsDialog();
+            //gameSettings.ShowDialog();
+            UserInterface gameInterface = new UserInterface();
+            gameInterface.Start();
         }
     }
 }

@@ -7,24 +7,28 @@ namespace UI
     public class UserInterface
     {
         private GameManagement m_Game = new GameManagement();
+        private SettingsDialog m_SettingsForm = new SettingsDialog();
+        
+        // not need!
         private const int k_BoardMenuSizeStartRange = 3;
         private const int k_BoardMenuSizeEndRange = 9;
         private const int k_GameStyleMenuSizeEndRange = 2;
 
         public void Start()
         {
-            initGame();
+            m_SettingsForm.FormClosed += initGame;
+
+            m_SettingsForm.ShowDialog();
             runGame();
         }
 
-        private void initGame()
+        public void initGame(object sender, EventArgs e)
         {
-            printBoardSizeMenu();
-            int gameSize = getIntegerInRangeFromUser(k_BoardMenuSizeEndRange, k_BoardMenuSizeStartRange);
-            printGameStyleManu();
-            ePlayerType gameStyle = (ePlayerType)getIntegerInRangeFromUser(k_GameStyleMenuSizeEndRange);
-            m_Game.SetBoardBySize(gameSize);
-            m_Game.InitPlayers(gameStyle);
+            if (m_SettingsForm.DialogResult == System.Windows.Forms.DialogResult.OK)
+            {
+               // m_Game.SetBoardBySize(gameSize);
+                m_Game.InitPlayers(m_SettingsForm.PlayerType);
+            }
         }
 
         private void printBoardSizeMenu()

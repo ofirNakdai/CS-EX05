@@ -30,3 +30,15 @@ C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטל�
 C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex02\UI\obj\Debug\UI.pdb
 C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex02\UI\obj\Debug\UI.csproj.GenerateResource.cache
 C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex02\UI\obj\Debug\UI.SettingsDialog.resources
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\bin\Debug\UI.dll
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\bin\Debug\UI.pdb
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\bin\Debug\Ex02.ConsoleUtils.dll
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\bin\Debug\Logics.dll
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\bin\Debug\Logics.pdb
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.SettingsDialog.resources
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.dll
+C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex05\UI\obj\Debug\UI.pdb

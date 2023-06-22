@@ -82,13 +82,13 @@ namespace UI
             // 
             // textBoxPlayer2
             // 
+            this.textBoxPlayer2.Enabled = false;
             this.textBoxPlayer2.Location = new System.Drawing.Point(123, 103);
             this.textBoxPlayer2.Name = "textBoxPlayer2";
-            this.textBoxPlayer2.ReadOnly = true;
             this.textBoxPlayer2.Size = new System.Drawing.Size(183, 22);
             this.textBoxPlayer2.TabIndex = 4;
             this.textBoxPlayer2.Text = "[Computer]";
-            this.textBoxPlayer2.ReadOnlyChanged += new System.EventHandler(this.textBoxPlayer2_ReadOnlyChanged);
+            this.textBoxPlayer2.EnabledChanged += new System.EventHandler(this.textBoxPlayer2_EnabledChanged);
             // 
             // label3
             // 
@@ -120,6 +120,7 @@ namespace UI
             0,
             0,
             0});
+            this.numericUpDownRows.ValueChanged += new System.EventHandler(this.numericUpDownRows_ValueChanged);
             // 
             // numericUpDownCols
             // 
@@ -142,6 +143,7 @@ namespace UI
             0,
             0,
             0});
+            this.numericUpDownCols.ValueChanged += new System.EventHandler(this.numericUpDownRows_ValueChanged);
             // 
             // label4
             // 
@@ -169,6 +171,8 @@ namespace UI
             this.button1.TabIndex = 9;
             this.button1.Text = "Start!";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_Click);
             // 
             // SettingsDialog
             // 
