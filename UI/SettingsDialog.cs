@@ -16,7 +16,6 @@ namespace UI
         public SettingsDialog()
         {
             InitializeComponent();
-            button1.Click += button1_Click;
         }
 
         public ePlayerType PlayerType
@@ -31,6 +30,13 @@ namespace UI
 
                 return resultType;
 
+            }
+        }
+        public int BoardSize
+        {
+            get
+            {
+                return int.Parse(numericUpDownCols.Value.ToString());
             }
         }
         private void checkBoxPlayer2_CheckedChanged(object sender, EventArgs e)
@@ -48,7 +54,7 @@ namespace UI
                 textBoxPlayer2.Text = "[Computer]";
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonStart_Click(object sender, EventArgs e)
         {
             (sender as Button).Text = "was Clicked!";
             DialogResult = DialogResult.OK;
@@ -58,6 +64,9 @@ namespace UI
         private void numericUpDownRows_ValueChanged(object sender, EventArgs e)
         {
             numericUpDownCols.Value = numericUpDownRows.Value;
+        }
+        private void numericUpDownCols_ValueChanged(object sender, EventArgs e)
+        {
             numericUpDownRows.Value = numericUpDownCols.Value;
         }
     }

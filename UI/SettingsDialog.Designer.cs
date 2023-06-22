@@ -39,7 +39,7 @@ namespace UI
             this.numericUpDownCols = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCols)).BeginInit();
             this.SuspendLayout();
@@ -143,7 +143,7 @@ namespace UI
             0,
             0,
             0});
-            this.numericUpDownCols.ValueChanged += new System.EventHandler(this.numericUpDownRows_ValueChanged);
+            this.numericUpDownCols.ValueChanged += new System.EventHandler(this.numericUpDownCols_ValueChanged);
             // 
             // label4
             // 
@@ -163,24 +163,23 @@ namespace UI
             this.label5.TabIndex = 7;
             this.label5.Text = "Cols:";
             // 
-            // button1
+            // buttonStart
             // 
-            this.button1.Location = new System.Drawing.Point(69, 250);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 35);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Start!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_Click);
+            this.buttonStart.Location = new System.Drawing.Point(69, 250);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(207, 35);
+            this.buttonStart.TabIndex = 9;
+            this.buttonStart.Text = "Start!";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // SettingsDialog
             // 
-            this.AcceptButton = this.button1;
+            this.AcceptButton = this.buttonStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 316);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.numericUpDownCols);
             this.Controls.Add(this.numericUpDownRows);
             this.Controls.Add(this.textBoxPlayer2);
@@ -194,6 +193,7 @@ namespace UI
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingsDialog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Game Settings";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCols)).EndInit();
@@ -214,6 +214,6 @@ namespace UI
         private System.Windows.Forms.NumericUpDown numericUpDownCols;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonStart;
     }
 }

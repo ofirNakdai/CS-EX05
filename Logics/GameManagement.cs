@@ -95,7 +95,7 @@
 
         public void SetupNewRound()
         {
-            m_Board.Empty();
+            m_Board.MakeEmpty();
             m_CurrentPlayer = m_Players[0];
             m_CurrentState = eGameState.Running;
         }

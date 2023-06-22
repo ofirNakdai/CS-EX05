@@ -12,7 +12,7 @@ namespace Logics
         {
             r_BoardSize = i_Size;
             m_Board = new eGameComponent[r_BoardSize, r_BoardSize];
-            this.Empty();
+            this.MakeEmpty();
         }
 
         public int Size
@@ -23,7 +23,7 @@ namespace Logics
             }
         }
 
-        public void Empty()
+        public void MakeEmpty()
         {
             for (int i = 0; i < r_BoardSize; i++)
             {
