@@ -27,7 +27,7 @@ namespace UI
             if (m_SettingsForm.DialogResult == System.Windows.Forms.DialogResult.OK)
             {
                // m_Game.SetBoardBySize(gameSize);
-                m_Game.InitPlayers(m_SettingsForm.PlayerType);
+               //m_Game.InitPlayers(m_SettingsForm.PlayerType);
             }
         }
 

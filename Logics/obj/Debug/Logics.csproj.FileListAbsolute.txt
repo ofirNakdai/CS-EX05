@@ -16,3 +16,9 @@ C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטל�
 C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex02\Logics\obj\Debug\Logics.csproj.CoreCompileInputs.cache
 C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex02\Logics\obj\Debug\Logics.dll
 C:\Users\Ofir Nakdai\Documents\לימודים\שנה ג\סמסטר ב\C#\מטלות\DN_MTA_2023B_Ex02\Logics\obj\Debug\Logics.pdb
+C:\Users\user\Source\Repos\CS-EX05\Logics\bin\Debug\Logics.dll
+C:\Users\user\Source\Repos\CS-EX05\Logics\bin\Debug\Logics.pdb
+C:\Users\user\Source\Repos\CS-EX05\Logics\obj\Debug\Logics.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\CS-EX05\Logics\obj\Debug\Logics.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\CS-EX05\Logics\obj\Debug\Logics.dll
+C:\Users\user\Source\Repos\CS-EX05\Logics\obj\Debug\Logics.pdb

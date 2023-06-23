@@ -1,11 +1,13 @@
 ﻿namespace Logics
 {
+    public delegate void CurrentPlayerChangedDelegate(int i_NewCurrentPlayerIndex);
     public class GameManagement
     {
         private Player[] m_Players = new Player[2];
         private Player m_CurrentPlayer = null;
         private GameBoard m_Board = null;
         private eGameState m_CurrentState = eGameState.Running;
+        public event CurrentPlayerChangedDelegate AlterCurrentPlayer;
 
         public Player[] Players
         {
@@ -41,10 +43,10 @@
             m_Board = new GameBoard(i_Size);
         }
         
-        public void InitPlayers(ePlayerType i_GameStyle)
+        public void InitPlayers(ePlayerType i_GameStyle, string i_Player1Name, string i_Player2Name = "Computer")
         {
-            m_Players[0] = new Player(ePlayerType.Human, eGameComponent.X);
-            m_Players[1] = new Player(i_GameStyle, eGameComponent.O);
+            m_Players[0] = new Player(ePlayerType.Human, eGameComponent.X, i_Player1Name);
+            m_Players[1] = new Player(i_GameStyle, eGameComponent.O, i_Player2Name);
         }
 
         public bool IsValidMove(int i_Row, int i_Col)
@@ -55,18 +57,28 @@
         public void MakeMove(int i_Row, int i_Col)
         {
             m_Board.SetCellValue(i_Row, i_Col, m_CurrentPlayer.PlayerSign);
-            alterCurrentPlayer();
+            currentPlayerChanged();
         }
 
-        private void alterCurrentPlayer()
+        private void currentPlayerChanged()
         {
             if (m_CurrentPlayer == m_Players[0])
             {
                 m_CurrentPlayer = m_Players[1];
+                OnCurrentPlayerChanged(1);
             }
             else
             {
                 m_CurrentPlayer = m_Players[0];
+                OnCurrentPlayerChanged(0);
+            }
+        }
+
+        protected virtual void OnCurrentPlayerChanged(int i_NewCurrentPlayerIndex)
+        {
+            if (AlterCurrentPlayer != null)
+            {
+               AlterCurrentPlayer.Invoke(i_NewCurrentPlayerIndex);
             }
         }
 
@@ -97,6 +109,7 @@
         {
             m_Board.MakeEmpty();
             m_CurrentPlayer = m_Players[0];
+            OnCurrentPlayerChanged(0);
             m_CurrentState = eGameState.Running;
         }
     }

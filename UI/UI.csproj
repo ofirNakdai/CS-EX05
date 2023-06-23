@@ -35,12 +35,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseForm.Designer.cs">
-      <DependentUpon>BaseForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ePlayerChar.cs" />
     <Compile Include="SettingsDialog.cs">
       <SubType>Form</SubType>
@@ -60,9 +54,6 @@
     <Reference Include="Ex02.ConsoleUtils">
       <HintPath>.\Ex02.ConsoleUtils.dll</HintPath>
     </Reference>
-    <Reference Include="Logics">
-      <HintPath>..\Logics\bin\Debug\Logics.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -70,15 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BaseForm.resx">
-      <DependentUpon>BaseForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SettingsDialog.resx">
       <DependentUpon>SettingsDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XMixDrix.resx">
       <DependentUpon>XMixDrix.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logics\Logics.csproj">
+      <Project>{fd00667d-d7d3-4d00-8e63-b31f98b4fcd5}</Project>
+      <Name>Logics</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

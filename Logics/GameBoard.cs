@@ -3,10 +3,13 @@ using System.Collections.Generic;
 
 namespace Logics
 {
+    public delegate void CellContentChangeEventHandler(int i_Row, int i_Col, eGameComponent i_CellContent);
+
     public class GameBoard
     {
         private readonly int r_BoardSize;
         private eGameComponent[,] m_Board;
+        public event CellContentChangeEventHandler CellContentChanged;
 
         public GameBoard(int i_Size)
         {
@@ -30,6 +33,7 @@ namespace Logics
                 for (int j = 0; j < r_BoardSize; j++)
                 {
                     m_Board[i, j] = eGameComponent.Empty;
+                    OnCellContentChanged(i + 1, j + 1, eGameComponent.Empty);
                 }
             }
         }
@@ -42,6 +46,15 @@ namespace Logics
         public void SetCellValue(int i_Row, int i_Col, eGameComponent i_Value)
         {
             m_Board[i_Row - 1, i_Col - 1] = i_Value;
+            OnCellContentChanged(i_Row, i_Col, i_Value);
+        }
+
+        protected virtual void OnCellContentChanged(int i_Row, int i_Col, eGameComponent i_Value)
+        {
+            if (CellContentChanged != null)
+            {
+                CellContentChanged.Invoke(i_Row, i_Col, i_Value);
+            }
         }
 
         public bool IsValidCell(int i_Row, int i_Col) 

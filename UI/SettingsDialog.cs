@@ -17,6 +17,20 @@ namespace UI
         {
             InitializeComponent();
         }
+        public string Player1Name
+        {
+            get
+            {
+                return textBoxPlayer1.Text;
+            }
+        }
+        public string Player2Name
+        {
+            get
+            {
+                return textBoxPlayer2.Text;
+            }
+        }
 
         public ePlayerType PlayerType
         {
@@ -29,7 +43,6 @@ namespace UI
                     resultType = ePlayerType.Computer;
 
                 return resultType;
-
             }
         }
         public int BoardSize
@@ -56,7 +69,6 @@ namespace UI
         }
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            (sender as Button).Text = "was Clicked!";
             DialogResult = DialogResult.OK;
             this.Close();
         }
